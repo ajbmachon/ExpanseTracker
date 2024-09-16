@@ -1,5 +1,4 @@
-package org.example
+package org.expense
 
 fun main() {
-    println("Hello World!")
 }
