@@ -1,7 +1,7 @@
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.Assertions.*
 
-import org.expense.org.expense.repository.InMemoryExpenseRepository
+import org.expense.repository.InMemoryExpenseRepository
 
 class ExpenseRepositoryTest {
 

@@ -1,4 +1,4 @@
-package org.expense.org.expense.repository
+package org.expense.repository
 
 import org.expense.models.Expense
 
