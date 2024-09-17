@@ -1,7 +1,6 @@
 package org.expense.cli
 
 import com.github.ajalt.clikt.core.CliktCommand
-import com.github.ajalt.clikt.core.Context
 import com.github.ajalt.clikt.core.subcommands
 import com.github.ajalt.clikt.parameters.options.option
 import com.github.ajalt.clikt.parameters.options.required
@@ -16,9 +15,10 @@ class Root: CliktCommand() {
     override fun run() = Unit
 }
 
-class Expense: CliktCommand(name = "expense") {
+class Expense: CliktCommand() {
     override fun run() = Unit
 } // todo use this as top level command before add when the application gets other cli command trees
+
 class Add: CliktCommand() {
     val description by option("-d", "--description", help="description for the expense",).required()
     val amount: Double by option("-a", "--amount", help="amount of the expense, must be a positive number",)
